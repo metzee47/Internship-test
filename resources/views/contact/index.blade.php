@@ -8,6 +8,7 @@
     <table>
         <thead>
             <tr>
+                <th>ID</th>
                 <th>Nom</th>
                 <th>Telephone</th>
                 <th>Email</th>
@@ -17,17 +18,18 @@
         <tbody>
             @foreach ($contacts as $contact)
                 <tr>
+                    <th>{{$contact->id}}</th>
                     <td>{{$contact->name}}</td>
                     <td>{{$contact->phone}}</td>
                     <td>{{$contact->email}}</td>
                     <td class="actions">
                         <a href="{{route('contacts.edit', $contact->id)}}">
-                            <button class="edit">Modifier</button>
+                            <button class="edit">EDITER</button>
                         </a>
                         <form action="{{route('contacts.destroy', $contact->id)}}" method="post">
                             @csrf
                             @method('delete')
-                            <button class="delete">Supprimer</button>
+                            <button class="delete">SUPPRIMER</button>
                         </form>
                     </td>
                 </tr>

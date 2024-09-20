@@ -19,7 +19,7 @@ nav{
 }
 
 button{
-    background-color: rgb(100, 153, 200);
+    background-color: rgb(225, 229, 233);
     padding: 10px;
     color: black;
     font-weight: bold;
@@ -62,6 +62,14 @@ thead th, tbody td{
     text-align: center;
 }
 
+thead th{
+    padding: 15px;
+}
+
+thead th:last-child{
+    text-align: right;
+}
+
 tbody tr{
     transition: all .3s;
 
@@ -78,10 +86,13 @@ tbody .actions{
 }
 
 tbody .actions .edit{
-    background-color: burlywood;
+    color: burlywood;
+    background-color: transparent;
+
 }
 tbody .actions .delete{
-    background-color: rgb(211, 56, 56);
+    color: rgb(211, 56, 56);
+    background-color: transparent;
 }
 
 .session{

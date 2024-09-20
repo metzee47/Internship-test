@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.87);
+    color: azure;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+button{
+    background-color: rgb(100, 153, 200);
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    border-radius: 7px;
+    border: none;
+}
+
+nav button{
+    background-color: rgb(9, 88, 62);
+}
+
+button:hover{
+    transform: scale(0.98);
+}
+
+main{
+    padding: 30px;
+
+}
+
+table{
+    width: 100%;
+    overflow-x: scroll;
+    border-collapse: collapse;
+    border-spacing: 10px;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.87);
+}
+
+table thead{
+    background-color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 10px;
+    color: beige;
+}
+
+thead th, tbody td{
+    padding: 8px;
+    text-wrap: nowrap;
+    text-align: center;
+}
+
+tbody tr{
+    transition: all .3s;
+
+}
+
+tbody tr:hover{
+    background-color: rgb(236, 234, 234);
+}
+
+tbody .actions{
+    display: flex;
+    column-gap: 4px;
+    justify-content: end;
+}
+
+tbody .actions .edit{
+    background-color: burlywood;
+}
+tbody .actions .delete{
+    background-color: rgb(211, 56, 56);
+}
+
+.session{
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+
+.suppression-contact{
+    background-color: rgb(211, 56, 56);
+    
+}
+
+.nouveau-contact{
+    background-color: rgb(9, 88, 62);
+}
+
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 100%;
+    justify-content: center;
+    margin: 14px 0;
+}
+
+.form-group input{
+    border: none;
+    background-color: rgb(197, 196, 196);
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.form-group .error{
+    padding: 8px;
+    background-color: brown;
+    color: aliceblue;
+    margin: 2px 0;
+    border-radius: 8px;
+}
+
+.crud-form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.crud-button{
+    background-color: rgb(9, 88, 62);
+}

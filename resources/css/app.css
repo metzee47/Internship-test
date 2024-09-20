@@ -1,0 +1,13 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: azure;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
